@@ -179,6 +179,7 @@ say <- function(what="Hello world!", by="cat",
 
   if (what == "time")
     what <- as.character(Sys.time())
+    what <- "this is Omid making change!"
   if (what == "fortune") {
     if ( is.null(fortune) ) fortune <- sample(1:360, 1)
     what <- fortune(which = fortune, ...)
